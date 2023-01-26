@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    //FontColor : #8f1212;
+}
+body{
+
+    //Work in progress
+    .workInProgress{
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffd2d9;
+        position: absolute;
+        flex-flow: column;
+        display: none;
+        overflow: hidden;
+
+        img{
+            margin-top: 1rem;
+        }
+    }
+    //Work in progress
+
+    
+    
+#header{
+    height:10vh ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+        
+    
+    .header__container{
+        height: 100%;
+        width: 100%;
+        border-bottom: 2px solid #8f1212;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo__container{
+            height: 8vh;
+            width: 13vw;
+            margin-left: 1rem;
+
+            .logo{
+                object-fit: contain;
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .nav{
+            display: none;
+        }
+
+
+        .menu__container{
+            margin-right: 1rem;
+            z-index: 2;
+            i{
+                font-size:1.5rem;
+            }
+        }
+    }
+}
+
+#main{
+    display: flex;
+    flex-flow:column;
+    height: 65vh;
+    
+
+//BarNav
+    .barNav__container{
+        height: 90vh;
+        width: 78vw;
+        position: absolute;
+        background-color: #ffffff;
+        border-right: #8f1212 solid 2px;
+        left: 0;
+        transform: translateX(-79vw);
+        transition: transform 300ms ;
+        z-index: 2;
+        display: grid;
+        grid-template-rows: 10% 90%;
+        grid-template-columns:1fr;
+        justify-items: center;
+
+        .barNav__title{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            width: 80%;
+            border-bottom: solid #8f1212 2px;
+
+
+            h1{
+                font-family:'Satisfy', cursive;
+                color:#8f1212;
+                text-align: center;
+
+            }
+        }
+        .barNav__links{
+         
+            ul{
+                margin-top: 1rem;
+
+                li{
+                    list-style: none;
+                    text-align: center;
+                    margin-top: .5rem;
+
+                    a{
+                        text-decoration: none;
+                        color: #8f1212;
+
+                        &:hover{
+                            opacity: .8;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+.barNavOn{
+    transform: translateX(0);
+    transition: transform 300ms;
+}
+//BarNav
+    
+    
+
+    .mainPicture__container{
+        height: 30vh;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        
+
+        .mainVideo{
+            object-fit:cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .mainPictureBelowInfo{
+        height: 35vh;
+        background-color: #ffd2d9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .mainInfo__container{
+            height: 90%;
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-flow: column;
+
+            h1{
+                font-size: 1.5rem;
+                text-align: center;
+                line-height: 2rem;
+                color: #8f1212;
+            }
+
+            span{
+                text-align: center;
+                font-size: 1.2rem;
+                line-height: 2rem;
+                color: #8f1212; 
+            }
+
+            .encontranosButton{
+                border: solid #8f1212 1px;
+                padding: 5px 20px;
+                border-radius:50px;
+                display: flex;
+                align-items: center;
+                position: relative;
+                justify-content: space-around;
+
+                &::before{
+                    content:"<-";
+                    position: absolute;
+                    color: #8f1212;
+                    right: -1.5rem;
+                }
+
+                &::after{
+                    content:"->";
+                    position: absolute;
+                    color: #8f1212;
+                    left: -1.5rem;
+                }
+                
+                span{
+                    font-size: .8rem;
+                }
+
+                i{
+                    color: #8f1212;
+                    margin-left: 3px;
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+}
+
+#footer{
+    height: 25vh;
+    background-color:#fff;
+    border-top: solid #8f1212 2px;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr;
+    align-items: center;
+    z-index: 1;
+    
+    .firstColumn,.secondColumn,.thirdColumn{
+        flex-flow:column;
+        display: grid;
+        height: 80%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-row: 1/2;
+        border-right: solid #8f1212 1px;
+
+        h2{
+            color: #000;
+            font-size:1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-flow: column;
+
+            li{
+                list-style: none;
+                font-size: .8rem;
+                text-align: center;
+                
+                a{
+                    text-decoration: none;
+                    color: #8f1212;
+                }
+            }
+        }
+    }
+    .thirdColumn{
+        border-right: none;
+    }
+    
+}
+
+
+
+
+}
+
+
+
+//𝖫𝗈𝗌 𝖾𝗌𝗉𝖾𝗋𝖺𝗆𝗈𝗌 𝖾𝗇 𝖡𝖾𝗅𝗀𝗋𝖺𝗇𝗈 𝟤𝟥𝟦𝟩 𝖽𝖾 𝟣𝟦𝗁𝗌 𝖺 𝟤𝟢𝗁𝗌. 𝖬𝖺𝗋𝗍𝖾𝗌 𝖢𝖤𝖱𝖱𝖠𝖣𝖮 🚫
+
+@media only screen and (min-width : 600px){
+    body{
+        .workInProgress{
+            display: flex;
+        }
+
+        #header{
+            display: none;
+        }
+
+        #main{
+            display: none;
+        }
+
+        #footer{
+            display: none;
+        }
+    }
+}
