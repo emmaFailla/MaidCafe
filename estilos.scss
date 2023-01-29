@@ -77,6 +77,281 @@ body{
     display: flex;
     flex-flow:column;
     height: 65vh;
+    overflow: scroll;
+
+    //LocationStyles
+#map{
+        height: 100%;
+        width: 100%;
+        background-color: #ffd2d9;
+    }
+    //LocationStyles
+
+    //MenuStyles
+    .linkMenu__container{
+        min-height: 20vh;
+        width: 100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 2px solid #8f1212;
+        position: relative;
+        background-color: #fde5e9;
+
+        .cafeTitle{
+            position: absolute;
+            bottom: 0;
+            left: 1rem;
+            color: #8f1212;
+            font-size: .6rem;
+        }
+
+        .linkMenu{
+            height: 50%;
+            width: 60%;
+            border-top: #000 solid  2px;
+            border-bottom: #000 solid  2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 2px;
+
+            .menuColor{
+                color: #8f1212;
+            }
+
+            span{
+                text-align: center;
+                b{
+                    color: #000;
+                    letter-spacing: 2px;
+                }
+            }
+            
+        }
+    }
+    .food__container{
+        display: flex;
+        flex-flow:column;
+
+
+        #cafe__container{
+            height: 50vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            align-items: center;
+            justify-items: center;
+            border-bottom: 1px solid #8f7373;
+            position: relative;
+            background-color: #fff;
+
+            .budinesTitle{
+                position: absolute;
+                bottom: 0;
+                left: 1rem;
+                color: #8f1212;
+                font-size: .6rem;
+            }
+
+            .item{
+                height: 65%;
+                width: 65%;
+                border: solid #8f1212 2px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+
+                .itemPic{
+                    height: 100%;
+                    width: 100%;
+                }
+
+                .itemTitle{
+                    position: absolute;
+                    top: -1.3rem;
+                    font-size: .8rem;
+                    color: #8f1212;
+                }
+            }
+        }
+
+        #budines__container{
+            height: 75vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            background-color: #fff0f5;
+            align-items: center;
+            justify-items: center;
+            border-bottom: 1px solid #8f1212;
+            position: relative;
+
+            .milkshakeTitle{
+                position: absolute;
+                bottom: 0;
+                left: 1rem;
+                color: #8f1212;
+                font-size: .6rem;
+            }
+
+            .item{
+                height: 65%;
+                width: 65%;
+                border: solid #8f1212 2px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+
+                .itemPic{
+                    height: 100%;
+                    width: 100%;
+                }
+
+                .itemTitle{
+                    position: absolute;
+                    top: -1.3rem;
+                    font-size: .8rem;
+                    color: #8f1212;
+                    white-space: nowrap;
+                }
+            }
+        }
+        #bebidas__container{
+            height: 175vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            align-items: center;
+            justify-items: center;
+            border-bottom: 1px solid #8f1212;
+            background-color: #fff;
+            position: relative;
+
+            .lingotesTitle{
+                position: absolute;
+                bottom: 0;
+                left: 1rem;
+                color: #8f1212;
+                font-size: .6rem;
+            }
+
+            .item{
+                height: 65%;
+                width: 65%;
+                border: solid #8f1212 2px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+
+                .itemPic{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                .itemTitle{
+                    position: absolute;
+                    top: -1.3rem;
+                    font-size: .8rem;
+                    color: #8f1212;
+                    white-space: nowrap;
+                }
+            }
+        }
+        #lingotes__container{
+            height: 75vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr ;
+            background-color: #fff0f5;
+            align-items: center;
+            justify-items: center;
+            border-bottom: 1px solid #8f1212;
+            position: relative;
+
+            .sinGlutenTitle{
+                position: absolute;
+                bottom: 0;
+                left: 1rem;
+                color: #8f1212;
+                font-size: .6rem;
+            }
+
+            .milkshakeTitle{
+                position: absolute;
+                bottom: 0;
+                left: 1rem;
+                color: #8f7373;
+                font-size: .8rem;
+            }
+
+            .item{
+                height: 65%;
+                width: 65%;
+                border: solid #8f1212 2px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+
+                .itemPic{
+                    height: 100%;
+                    width: 100%;
+                }
+
+                .itemTitle{
+                    position: absolute;
+                    top: -1.3rem;
+                    font-size: .8rem;
+                    color: #8f1212;
+                    white-space: nowrap;
+                }
+            }  
+        }
+        #sinGluten__container{
+            height: 70vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            align-items: center;
+            justify-items: center;
+            border-bottom: 1px solid #8f7373;
+            position: relative;
+            background-color: #fff;
+
+            .budinesTitle{
+                position: absolute;
+                bottom: 0;
+                left: 1rem;
+                color: #8f1212;
+                font-size: .6rem;
+            }
+
+            .item{
+                height: 65%;
+                width: 65%;
+                border: solid #8f1212 2px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+
+                .itemPic{
+                    height: 100%;
+                    width: 100%;
+                }
+
+                .itemTitle{
+                    position: absolute;
+                    top: -1.3rem;
+                    font-size: .8rem;
+                    color: #8f1212;
+                    white-space: nowrap;
+                }
+            } 
+        }
+    }
+    //MenuStyles
+
     
 
 //BarNav
@@ -103,10 +378,12 @@ body{
             border-bottom: solid #8f1212 2px;
 
 
-            h1{
+            a{
                 font-family:'Satisfy', cursive;
                 color:#8f1212;
                 text-align: center;
+                text-decoration: none;
+                font-size: 2rem;
 
             }
         }
@@ -157,7 +434,7 @@ body{
     }
     .mainPictureBelowInfo{
         height: 35vh;
-        background-color: #ffd2d9;
+        background-color: #ffd8df;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -207,8 +484,10 @@ body{
                     left: -1.5rem;
                 }
                 
-                span{
+                a{
                     font-size: .8rem;
+                    text-decoration: none;
+                    color: #8f1212;
                 }
 
                 i{
@@ -239,6 +518,7 @@ body{
         grid-template-columns: 1fr;
         grid-row: 1/2;
         border-right: solid #8f1212 1px;
+        justify-items: center;
 
         h2{
             color: #000;
@@ -247,6 +527,23 @@ body{
             align-items: center;
             justify-content: center;
 
+        }
+
+        .menuButton{
+           width: 50%; 
+           height: 70%;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           background-color: #ffdde2;
+           border: #000 1.5px solid;
+
+           a{
+            font-size: 1rem;
+            text-decoration: none;
+            font-weight: bolder;
+            color: #000;
+           }
         }
 
         ul{

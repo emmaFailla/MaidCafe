@@ -95,6 +95,342 @@ body #main {
       -ms-flex-flow: column;
           flex-flow: column;
   height: 65vh;
+  overflow: scroll;
+}
+
+body #main #map {
+  height: 100%;
+  width: 100%;
+  background-color: #ffd2d9;
+}
+
+body #main .linkMenu__container {
+  min-height: 20vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 2px solid #8f1212;
+  position: relative;
+  background-color: #fde5e9;
+}
+
+body #main .linkMenu__container .cafeTitle {
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  color: #8f1212;
+  font-size: .6rem;
+}
+
+body #main .linkMenu__container .linkMenu {
+  height: 50%;
+  width: 60%;
+  border-top: #000 solid  2px;
+  border-bottom: #000 solid  2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 2px;
+}
+
+body #main .linkMenu__container .linkMenu .menuColor {
+  color: #8f1212;
+}
+
+body #main .linkMenu__container .linkMenu span {
+  text-align: center;
+}
+
+body #main .linkMenu__container .linkMenu span b {
+  color: #000;
+  letter-spacing: 2px;
+}
+
+body #main .food__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+body #main .food__container #cafe__container {
+  height: 50vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  border-bottom: 1px solid #8f7373;
+  position: relative;
+  background-color: #fff;
+}
+
+body #main .food__container #cafe__container .budinesTitle {
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  color: #8f1212;
+  font-size: .6rem;
+}
+
+body #main .food__container #cafe__container .item {
+  height: 65%;
+  width: 65%;
+  border: solid #8f1212 2px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #main .food__container #cafe__container .item .itemPic {
+  height: 100%;
+  width: 100%;
+}
+
+body #main .food__container #cafe__container .item .itemTitle {
+  position: absolute;
+  top: -1.3rem;
+  font-size: .8rem;
+  color: #8f1212;
+}
+
+body #main .food__container #budines__container {
+  height: 75vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  background-color: #fff0f5;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  border-bottom: 1px solid #8f1212;
+  position: relative;
+}
+
+body #main .food__container #budines__container .milkshakeTitle {
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  color: #8f1212;
+  font-size: .6rem;
+}
+
+body #main .food__container #budines__container .item {
+  height: 65%;
+  width: 65%;
+  border: solid #8f1212 2px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #main .food__container #budines__container .item .itemPic {
+  height: 100%;
+  width: 100%;
+}
+
+body #main .food__container #budines__container .item .itemTitle {
+  position: absolute;
+  top: -1.3rem;
+  font-size: .8rem;
+  color: #8f1212;
+  white-space: nowrap;
+}
+
+body #main .food__container #bebidas__container {
+  height: 175vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  border-bottom: 1px solid #8f1212;
+  background-color: #fff;
+  position: relative;
+}
+
+body #main .food__container #bebidas__container .lingotesTitle {
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  color: #8f1212;
+  font-size: .6rem;
+}
+
+body #main .food__container #bebidas__container .item {
+  height: 65%;
+  width: 65%;
+  border: solid #8f1212 2px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #main .food__container #bebidas__container .item .itemPic {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body #main .food__container #bebidas__container .item .itemTitle {
+  position: absolute;
+  top: -1.3rem;
+  font-size: .8rem;
+  color: #8f1212;
+  white-space: nowrap;
+}
+
+body #main .food__container #lingotes__container {
+  height: 75vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  background-color: #fff0f5;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  border-bottom: 1px solid #8f1212;
+  position: relative;
+}
+
+body #main .food__container #lingotes__container .sinGlutenTitle {
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  color: #8f1212;
+  font-size: .6rem;
+}
+
+body #main .food__container #lingotes__container .milkshakeTitle {
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  color: #8f7373;
+  font-size: .8rem;
+}
+
+body #main .food__container #lingotes__container .item {
+  height: 65%;
+  width: 65%;
+  border: solid #8f1212 2px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #main .food__container #lingotes__container .item .itemPic {
+  height: 100%;
+  width: 100%;
+}
+
+body #main .food__container #lingotes__container .item .itemTitle {
+  position: absolute;
+  top: -1.3rem;
+  font-size: .8rem;
+  color: #8f1212;
+  white-space: nowrap;
+}
+
+body #main .food__container #sinGluten__container {
+  height: 70vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  border-bottom: 1px solid #8f7373;
+  position: relative;
+  background-color: #fff;
+}
+
+body #main .food__container #sinGluten__container .budinesTitle {
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  color: #8f1212;
+  font-size: .6rem;
+}
+
+body #main .food__container #sinGluten__container .item {
+  height: 65%;
+  width: 65%;
+  border: solid #8f1212 2px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #main .food__container #sinGluten__container .item .itemPic {
+  height: 100%;
+  width: 100%;
+}
+
+body #main .food__container #sinGluten__container .item .itemTitle {
+  position: absolute;
+  top: -1.3rem;
+  font-size: .8rem;
+  color: #8f1212;
+  white-space: nowrap;
 }
 
 body #main .barNav__container {
@@ -134,10 +470,12 @@ body #main .barNav__container .barNav__title {
   border-bottom: solid #8f1212 2px;
 }
 
-body #main .barNav__container .barNav__title h1 {
+body #main .barNav__container .barNav__title a {
   font-family: 'Satisfy', cursive;
   color: #8f1212;
   text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
 }
 
 body #main .barNav__container .barNav__links ul {
@@ -188,7 +526,7 @@ body #main .mainPicture__container .mainVideo {
 
 body #main .mainPictureBelowInfo {
   height: 35vh;
-  background-color: #ffd2d9;
+  background-color: #ffd8df;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -260,8 +598,10 @@ body #main .mainPictureBelowInfo .mainInfo__container .encontranosButton::after 
   left: -1.5rem;
 }
 
-body #main .mainPictureBelowInfo .mainInfo__container .encontranosButton span {
+body #main .mainPictureBelowInfo .mainInfo__container .encontranosButton a {
   font-size: .8rem;
+  text-decoration: none;
+  color: #8f1212;
 }
 
 body #main .mainPictureBelowInfo .mainInfo__container .encontranosButton i {
@@ -302,6 +642,7 @@ body #footer .firstColumn, body #footer .secondColumn, body #footer .thirdColumn
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   border-right: solid #8f1212 1px;
+  justify-items: center;
 }
 
 body #footer .firstColumn h2, body #footer .secondColumn h2, body #footer .thirdColumn h2 {
@@ -316,6 +657,29 @@ body #footer .firstColumn h2, body #footer .secondColumn h2, body #footer .third
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+body #footer .firstColumn .menuButton, body #footer .secondColumn .menuButton, body #footer .thirdColumn .menuButton {
+  width: 50%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ffdde2;
+  border: #000 1.5px solid;
+}
+
+body #footer .firstColumn .menuButton a, body #footer .secondColumn .menuButton a, body #footer .thirdColumn .menuButton a {
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bolder;
+  color: #000;
 }
 
 body #footer .firstColumn ul, body #footer .secondColumn ul, body #footer .thirdColumn ul {
